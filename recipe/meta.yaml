@@ -1,5 +1,5 @@
 {% set name = "picows" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/picows-{{ version }}.tar.gz
-  sha256: 4af2520cd6382ff1b3293fe14872dc68ce8f34e52792db97167fcd9d1dde2091
+  sha256: 874538981f661220deceb36b36c8fc7413e8a1555563465a67bac7e24f3b9413
 
 build:
   skip: true  # [py<38]
