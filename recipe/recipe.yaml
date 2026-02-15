@@ -29,6 +29,7 @@ requirements:
   run:
     - python
     - multidict
+    - python-socks
 
 tests:
   - python:
