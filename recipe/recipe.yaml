@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: picows
-  version: "1.12.0"
+  version: "1.13.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,9 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/picows-${{ version }}.tar.gz
-  sha256: 917512bbab78331eb5e888c6bf0fd23f00ed5f65ff375e66c3aa771c54566fc3
+  sha256: bf7b9fdfbfd3c73768f89a8f544a4a216c4d277fbf69d0a7a7597a29b241f81a
 
 build:
+  skip: match(python, "<3.11")
   number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -29,6 +30,7 @@ requirements:
   run:
     - python
     - multidict
+    - python-socks
 
 tests:
   - python:
