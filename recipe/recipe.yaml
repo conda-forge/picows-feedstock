@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: picows
-  version: "1.13.1"
+  version: "1.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/picows-${{ version }}.tar.gz
-  sha256: 58373438580e6fc8d88260382404b6c3cf58af4d9f33a09fd84cc6967d325476
+  sha256: 06333eb6e82e8cb22524317d3c033cc002257f47aa44dd3489cf483722f85c29
 
 build:
   skip: match(python, "<3.11")
