@@ -25,13 +25,13 @@ requirements:
     - python
     - setuptools >=78.0
     - wheel
-    - cython >=3.0
+    - cython >=3.2
     - pip
   run:
     - python
     - multidict
     - python-socks
-    - aiofastnet
+    - aiofastnet >=0.5.0
 
 tests:
   - python:
