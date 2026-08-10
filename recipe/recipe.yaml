@@ -31,6 +31,7 @@ requirements:
     - python
     - multidict
     - python-socks
+    - aiofastnet
 
 tests:
   - python:
